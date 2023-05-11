@@ -1,10 +1,8 @@
-package co.uk.aviva.pages;
+package edu.na.pages;
 
-import co.uk.aviva.utilites.BrowserUtils;
-import co.uk.aviva.utilites.Driver;
-import org.openqa.selenium.By;
+import edu.na.utilites.BrowserUtils;
+import edu.na.utilites.Driver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

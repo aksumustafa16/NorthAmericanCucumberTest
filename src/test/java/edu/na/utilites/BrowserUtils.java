@@ -1,4 +1,4 @@
-package co.uk.aviva.utilites;
+package edu.na.utilites;
 
 import org.junit.Assert;
 import org.openqa.selenium.*;

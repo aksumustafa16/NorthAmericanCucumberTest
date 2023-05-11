@@ -1,6 +1,6 @@
-package co.uk.aviva.pages;
+package edu.na.pages;
 
-import co.uk.aviva.utilites.Driver;
+import edu.na.utilites.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -30,7 +30,7 @@ public class LoginPage {
     public WebElement submit;
 
    @FindBy(xpath = "//*[@class='o-masthead-logo__link']")
-   public WebElement avivaLogo;
+   public WebElement Logo;
 
     @FindBy(xpath = "(//a[@class='a-button a-button--tertiary'])[2]")
     public WebElement carInsurance;

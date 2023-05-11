@@ -1,4 +1,4 @@
-package co.uk.aviva.pages;
+package edu.na.pages;
 
 public class DashboardPage extends BasePage{
 }

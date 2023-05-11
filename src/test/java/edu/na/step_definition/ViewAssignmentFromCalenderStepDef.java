@@ -1,17 +1,16 @@
-package co.uk.aviva.step_definition;
+package edu.na.step_definition;
 
-import co.uk.aviva.utilites.Driver;
+import edu.na.utilites.Driver;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
 public class ViewAssignmentFromCalenderStepDef {
 
-
-    @Test
-    public void ViewAssignmentFromCalender() throws InterruptedException {
-        Driver.get().findElement(By.id("myCourses-label")).click();
-        Driver.get().findElement(By.linkText("COMP 5393 1 - Capstone Project")).click();
+    @Then("the user see the assignments")
+    public void the_user_see_the_assignments() throws InterruptedException {
         Driver.get().findElement(By.linkText("Course Calendar")).click();
         Thread.sleep(2000);
         Driver.get().findElement(By.xpath("(//*[@*='fc-content'])[18]")).click();
@@ -21,8 +20,5 @@ public class ViewAssignmentFromCalenderStepDef {
         String ExpectedText = "Source Code";
         System.out.println(ActualText + " " + ExpectedText);
         Assert.assertEquals(ActualText,ExpectedText);
-
-
-
     }
 }

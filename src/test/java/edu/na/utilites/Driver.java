@@ -1,4 +1,4 @@
-package co.uk.aviva.utilites;
+package edu.na.utilites;
 
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;

@@ -1,4 +1,4 @@
-package co.uk.aviva.utilites;
+package edu.na.utilites;
 
 import java.io.FileInputStream;
 import java.util.Properties;

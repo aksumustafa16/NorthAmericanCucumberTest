@@ -1,11 +1,10 @@
-package co.uk.aviva.step_definition;
+package edu.na.step_definition;
 
-import co.uk.aviva.utilites.ConfigurationReader;
-import co.uk.aviva.utilites.Driver;
+import edu.na.utilites.ConfigurationReader;
+import edu.na.utilites.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,6 +19,8 @@ public class Hooks {
         Driver.get().findElement(By.id("siteNavBar_welcomeBackBarLoggedOut_JicsLoginRedirectContinue")).click();
         Driver.get().findElement(By.id("password")).sendKeys(ConfigurationReader.get("password"));
         Driver.get().findElement(By.name("siteNavBar$welcomeBackBarLoggedOut$ButtonLogin")).click();
+        Driver.get().findElement(By.id("myCourses-label")).click();
+        Driver.get().findElement(By.linkText("COMP 5393 1 - Capstone Project")).click();
     }
 
     @After
