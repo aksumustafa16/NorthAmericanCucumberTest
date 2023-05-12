@@ -1,10 +1,8 @@
 package edu.na.step_definition;
 
 import edu.na.utilites.Driver;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.By;
 
 public class FindStudentsInRosterStepDef {
